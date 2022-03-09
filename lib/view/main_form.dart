@@ -33,9 +33,6 @@ class _MainFormState extends State<MainForm> {
   }
 
   void analyze() async {
-    if (fileMap.isNotEmpty) {
-      fileMap = new HashMap();
-    }
     String? selectedDir = await FilePicker.platform.getDirectoryPath();
     var dir = Directory(selectedDir!);
     final List<FileSystemEntity> entities = await dir.list().toList();

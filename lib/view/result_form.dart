@@ -21,8 +21,9 @@ class ResultForm extends StatelessWidget {
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
             ),
             Center(
-              child: PieChart(dataMap: fileSizeMap,
-              ),
+              child: PieChart(
+                //TODO: change maximum size for pie chart
+                  dataMap: fileSizeMap,)
             )
           ],
         ),
